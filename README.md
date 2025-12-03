@@ -67,9 +67,8 @@ pnpm preview
 client/
 ├── src/
 │   ├── pages/
-│   │   ├── HomeRetrospectiva.tsx  # Página principal (Natal/Ano Novo)
-│   │   ├── HomeEventos.tsx        # Página Black Friday (antiga)
-│   │   └── Home.tsx               # Página original
+│   │   ├── HomeRetrospectiva.tsx  # Página principal
+│   │   └── NotFound.tsx           # Página 404
 │   ├── components/
 │   │   ├── LeadCaptureFormWizard.tsx
 │   │   └── ui/                    # Componentes shadcn/ui
@@ -80,9 +79,8 @@ client/
 
 ## 🎯 Rotas
 
-- `/` - Retrospectiva Petrobras 2025 (atual)
-- `/blackfriday` - Black Friday (anterior)
-- `/original` - Versão original
+- `/` - Retrospectiva Petrobras 2025
+- Qualquer outra rota - Página 404
 
 ## 📋 Componentes Principais
 

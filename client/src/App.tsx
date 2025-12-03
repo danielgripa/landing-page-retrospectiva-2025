@@ -5,16 +5,12 @@ import { Route, Switch, Router } from "wouter";
 import { useHashLocation } from "wouter/use-hash-location";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
-import Home from "./pages/Home";
-import HomeEventos from "./pages/HomeEventos";
 import HomeRetrospectiva from "./pages/HomeRetrospectiva";
 
 function RoutesApp() {
   return (
     <Switch>
       <Route path="/" component={HomeRetrospectiva} />
-      <Route path="/blackfriday" component={HomeEventos} />
-      <Route path="/original" component={Home} />
       <Route component={NotFound} />
     </Switch>
   );
