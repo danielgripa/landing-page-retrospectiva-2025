@@ -179,7 +179,7 @@ export default function HomeRetrospectiva() {
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage: 'url(fundo-refinaria.jpeg)',
-            opacity: 0.3
+            opacity: 0.5
           }}
         />
         
