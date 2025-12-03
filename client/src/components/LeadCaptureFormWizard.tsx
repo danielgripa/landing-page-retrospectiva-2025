@@ -189,7 +189,7 @@ export default function LeadCaptureFormWizard() {
         body: JSON.stringify({
           ...formData,
           timestamp: new Date().toISOString(),
-          source: "Landing Page Evento no dia 27"
+          source: "Landing Page Retrospectiva Petrobras 2025"
         })
       });
 
@@ -202,9 +202,9 @@ export default function LeadCaptureFormWizard() {
         window.dataLayer.push({
           event: 'generate_lead', // Evento padrão do Google Analytics 4
           event_category: 'Lead',
-          event_label: 'Evento dia 27/11',
-          form_name: 'lead_capture_eventos_wizard',
-          form_type: 'eventos_black_friday',
+          event_label: 'Retrospectiva Petrobras 2025',
+          form_name: 'lead_capture_retrospectiva_wizard',
+          form_type: 'retrospectiva_dezembro',
           lead_type: 'evento_inscricao',
           user_name: formData.nome,
           user_email: formData.email,
@@ -219,7 +219,7 @@ export default function LeadCaptureFormWizard() {
         // Evento adicional para compatibilidade com Meta Pixel
         window.dataLayer.push({
           event: 'Lead', // Nome do evento para Meta Ads
-          content_name: 'Inscrição Evento do dia 27',
+          content_name: 'Inscrição Retrospectiva Petrobras 2025',
           content_category: 'Lead Generation',
           value: 1,
           currency: 'BRL'
